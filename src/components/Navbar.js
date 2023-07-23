@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative flex flex-wrap items-center justify-between p-6 text-[#ECEFF6] bg-gradient-to-r from-cyan-900 to-cyan-950">
+    <nav className="relative flex flex-wrap items-center justify-between p-6 text-[#ECEFF6] bg-gradient-to-r from-gray-800 to-gray-950">
       <div className="flex items-center mr-4">
         <Link to={'/'} className="font-bold mr-2">
           <h1>RPG Store</h1>
@@ -48,23 +48,23 @@ const Navbar = () => {
           isOpen ? 'block' : 'hidden'
         } w-full flex-grow lg:flex lg:items-center lg:w-auto`}
       >
-        <ul className="flex flex-col lg:flex-row lg:ml-auto lg:justify-center">
-          <li className="transition hover:ease-in-out hover:text-[#4196E5] hover:scale-125">
+        <ul className="flex flex-col lg:flex-row lg:ml-auto lg:justify-center lg:gap-8 lg:mr-48">
+          <li className="transition hover:ease-in-out hover:text-green-500 hover:scale-125">
             <Link to={`/category/armas`}>
               <i className="fa-solid fa-wand-sparkles m-2"></i> Armas
             </Link>
           </li>
-          <li className="transition hover:ease-in-out hover:text-[#4196E5] hover:scale-125">
+          <li className="transition hover:ease-in-out hover:text-green-500 hover:scale-125">
             <Link to={`/category/armadura`}>
               <i className="fa-solid fa-shield-halved m-2"></i> Armaduras
             </Link>
           </li>
-          <li className="transition hover:ease-in-out hover:text-[#4196E5] hover:scale-125">
+          <li className="transition hover:ease-in-out hover:text-green-500 hover:scale-125">
             <Link to={`/category/consumibles`}>
               <i className="fa-solid fa-flask m-2"></i> Pociones
             </Link>
           </li>
-          <li className="transition hover:ease-in-out hover:text-[#4196E5] hover:scale-125">
+          <li className="transition hover:ease-in-out hover:text-green-500 hover:scale-125">
             <Link to={`/category/mascota`}>
               <i className="fa-solid fa-paw m-2"></i> Mascotas
             </Link>

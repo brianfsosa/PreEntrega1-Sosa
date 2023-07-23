@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const ItemCount = ({ stockMax = 10 }) => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
 
   const incrementCount = () => {
     if (count < stockMax) {
@@ -10,7 +10,7 @@ const ItemCount = ({ stockMax = 10 }) => {
   };
 
   const decrementCount = () => {
-    if (count > 0) {
+    if (count > 1) {
       setCount((contador) => contador - 1);
     }
   };

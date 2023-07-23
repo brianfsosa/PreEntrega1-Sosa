@@ -1,21 +1,27 @@
-import React from 'react'
-import ItemCount from './ItemCount'
 import { Link } from 'react-router-dom'
 
-function Item({codigo, nombre, precio, stock, descripcion}) {
+
+function Item({codigo, nombre, precio, stock, descripcion,img}) {
   return (
-    <div className='w-96'>
+    
+        
+
+        <article className='w-64  lg:w-96 md:w-72 text-center lg:m-6'>
+          
+          <div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+      {/* Imagen del producto (puedes agregarla aquí si tienes una) */}
+       <img src={img} alt={nombre} className="w-full h-64 object-cover" /> 
+      
+      <div className="p-6">
+        <h2 className="text-xl font-semibold text-white mb-4">{nombre}</h2>
+        <p className="text-gray-300">{descripcion}</p>
+          <p className="text-green-500 font-semibold text-5xl text-center m-4">${precio}</p>
         <div>
-            <h1>{nombre}</h1>
-            <p>{descripcion}</p>
-            <p>${precio}</p>
-            
+            <Link to={`/item/${codigo}`} className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">Ver detalle</Link>
         </div>
-        <div>
-            <Link to={`/item/${codigo}`} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Ver detalle</Link>
-            <ItemCount stockMax={stock}/>
-        </div>
+      </div>
     </div>
+      </article>
   )
 }
 

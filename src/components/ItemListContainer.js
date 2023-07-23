@@ -22,7 +22,7 @@ function ItemListContainer({greeting}) {
   },[categoryId])
 
   return (
-    <div className="text-center mt-8">
+    <div className="text-center mt-8 text-green-500 font-semibold">
       {greeting}
       <ItemList  products={products}/>
     </div>
