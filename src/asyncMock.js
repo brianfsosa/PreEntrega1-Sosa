@@ -1,139 +1,138 @@
-import espadaDeFuegoImg from '../src/assets/images/espada-de-fuego.jfif';
-import armaduraDePlataImg from '../src/assets/images/armadura-de-plata.jfif';
-import pocionDeCuracionImg from '../src/assets/images/pocion-de-curacion.jfif';
-import varitaDeRelampagosImg from '../src/assets/images/varita-de-relampagos.jfif';
-import dragonDeMascotaImg from '../src/assets/images/dragon-de-mascota.jfif';
-import escudoDePiedraImg from '../src/assets/images/escudo-de-piedra.jfif';
-import dagaEnvenenadaImg from '../src/assets/images/daga-envenenada.jfif';
-import amuletoDeProteccionImg from '../src/assets/images/amuleto-de-proteccion.jfif';
-import familiarDeLoboImg from '../src/assets/images/familiar-de-lobo.jfif';
-import tunicaDeMagoImg from '../src/assets/images/tunica-de-mago.jfif';
-import martilloDeGuerraImg from '../src/assets/images/martillo-de-guerra.jfif';
-import pocionDeVelocidadImg from '../src/assets/images/pocion-de-velocidad.jfif';
-import arcoElficoImg from '../src/assets/images/arco-elfico.jfif';
-import anilloDeInvisibilidadImg from '../src/assets/images/anillo-de-invisibilidad.jfif';
-import grimorioAntiguoImg from '../src/assets/images/grimorio-antiguo.jfif';
-
 const products = [
   {
     nombre: "Espada de fuego",
-    codigo: "1",
+    id: "1",
     precio: 50,
     categoria: "armas",
-    img: espadaDeFuegoImg,
+    img: "/assets/images/espada-de-fuego.jfif",
     descripcion: "Una espada imbuida con el poder del fuego para infligir daño adicional.",
+    stock:3
   },
   {
     nombre: "Armadura de plata",
-    codigo: "2",
+    id: "2",
     precio: 100,
     categoria: "armadura",
-    img: armaduraDePlataImg,
+    img: "/assets/images/armadura-de-plata.jfif",
     descripcion: "Una armadura hecha de plata resistente que proporciona una excelente protección.",
+    stock:2
   },
   {
     nombre: "Poción de curación",
-    codigo: "3",
+    id: "3",
     precio: 10,
     categoria: "consumibles",
-    img: pocionDeCuracionImg,
+    img: "/assets/images/pocion-de-curacion.jfif",
     descripcion: "Una poción mágica que restaura una cantidad moderada de puntos de vida.",
+    stock:6
   },
   {
     nombre: "Varita de relámpagos",
-    codigo: "18",
+    id: "18",
     precio: 80,
     categoria: "armas",
-    img: varitaDeRelampagosImg,
+    img: "/assets/images/varita-de-relampagos.jfif",
     descripcion: "Una varita mágica que lanza poderosos rayos de relámpagos a los enemigos.",
+    stock:7
   },
   {
     nombre: "Dragón de mascota",
-    codigo: "19",
+    id: "19",
     precio: 150,
     categoria: "mascota",
-    img: dragonDeMascotaImg,
+    img: "/assets/images/dragon-de-mascota.jfif",
     descripcion: "Un compañero leal en forma de dragón que puede volar y atacar a tus enemigos.",
+    stock:9
   },
   {
     nombre: "Escudo de piedra",
-    codigo: "4",
+    id: "4",
     precio: 30,
     categoria: "armadura",
-    img: escudoDePiedraImg,
+    img: "/assets/images/escudo-de-piedra.jfif",
     descripcion: "Un escudo resistente hecho de piedra para bloquear los ataques enemigos.",
+    stock:35
   },
   {
     nombre: "Daga envenenada",
-    codigo: "5",
+    id: "5",
     precio: 25,
     categoria: "armas",
-    img: dagaEnvenenadaImg,
+    img: "/assets/images/daga-envenenada.jfif",
     descripcion: "Una daga con una hoja envenenada que causa daño adicional por veneno.",
+    stock:8
   },
   {
     nombre: "Amuleto de protección",
-    codigo: "6",
+    id: "6",
     precio: 50,
     categoria: "armadura",
-    img: amuletoDeProteccionImg,
+    img: "/assets/images/amuleto-de-proteccion.jfif",
     descripcion: "Un amuleto mágico que aumenta la defensa del jugador contra los ataques enemigos.",
+    stock:3
   },
   {
     nombre: "Familiar de lobo",
-    codigo: "7",
+    id: "7",
     precio: 80,
     categoria: "mascota",
-    img: familiarDeLoboImg,
+    img: "/assets/images/familiar-de-lobo.jfif",
     descripcion: "Un lobo leal que lucha junto al jugador y mejora sus habilidades de rastreo.",
+    stock:6
   },
   {
     nombre: "Túnica de mago",
-    codigo: "8",
+    id: "8",
     precio: 70,
     categoria: "armadura",
-    img: tunicaDeMagoImg,
+    img: "/assets/images/tunica-de-mago.jfif",
     descripcion: "Una túnica de mago hecha de tela especial que aumenta el poder mágico.",
+    stock:2
   },
   {
     nombre: "Martillo de guerra",
-    codigo: "9",
+    id: "9",
     precio: 55,
     categoria: "armas",
-    img: martilloDeGuerraImg,
+    img: "/assets/images/martillo-de-guerra.jfif",
     descripcion: "Un martillo pesado y poderoso que causa un gran daño de golpe.",
+    stock:7
   },
   {
     nombre: "Poción de velocidad",
-    codigo: "10",
+    id: "10",
     precio: 15,
     categoria: "consumibles",
-    img: pocionDeVelocidadImg,
+    img: "/assets/images/pocion-de-velocidad.jfif",
     descripcion: "Una poción mágica que otorga un aumento temporal en la velocidad del jugador.",
+    stock:15
   },
   {
     nombre: "Arco élfico",
-    codigo: "11",
+    id: "11",
     precio: 65,
     categoria: "armas",
-    img: arcoElficoImg,
+    img: "/assets/images/arco-elfico.jfif",
     descripcion: "Un arco elegante y preciso hecho por los maestros arqueros élficos.",
+    stock:9
   },
   {
     nombre: "Anillo de invisibilidad",
-    codigo: "12",
+    id: "12",
     precio: 120,
     categoria: "armadura",
-    img: anilloDeInvisibilidadImg,
+    img: "/assets/images/anillo-de-invisibilidad.jfif",
     descripcion: "Un anillo que otorga la habilidad de volverse invisible durante un corto período de tiempo.",
+    stock:1
   },
   {
     nombre: "Grimorio antiguo",
-    codigo: "13",
+    id: "13",
     precio: 90,
     categoria: "arma",
-    img: grimorioAntiguoImg,
+    img: "/assets/images/grimorio-antiguo.jfif",
     descripcion: "Un libro mágico lleno de hechizos antiguos y conocimientos arcanos.",
+    stock:3
   }
 ];
 
@@ -149,7 +148,7 @@ const products = [
   export const getProductById = (productId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products.find(prod => prod.codigo === productId))
+            resolve(products.find(prod => prod.id === productId))
         }, 500)
     })
   }

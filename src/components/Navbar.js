@@ -72,7 +72,11 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="hidden lg:block">
-        <CartWidget />
+        <Link to={'/cart'}>
+          <CartWidget />
+        </Link>
+        
+        
       </div>
     </nav>
   );

@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
-const ItemCount = ({ stockMax = 10 }) => {
+const ItemCount = ({stock, handleAddToCart}) => {
   const [count, setCount] = useState(1);
 
   const incrementCount = () => {
-    if (count < stockMax) {
+    if (count < stock) {
       setCount((contador) => contador + 1);
     }
   };
@@ -16,15 +16,21 @@ const ItemCount = ({ stockMax = 10 }) => {
   };
 
   return (
-    <div className="flex rounded bg-gray-400 gap-4 m-2 px-6 py-1 ">
-      <button className="text-xl font-bold" onClick={incrementCount}>
-        +
-      </button>
-      <h1 className="w-full">{count}</h1>
-      <button className="text-xl font-bold" onClick={decrementCount}>
-        -
-      </button>
-    </div>
+    <>
+      <div className="flex rounded bg-gray-400 gap-4 m-2 px-6 py-1 ">
+        <button className="text-xl font-bold" onClick={decrementCount}>
+          -
+        </button>
+        <h1 className="w-full">{count}</h1>
+        <button className="text-xl font-bold" onClick={incrementCount}>
+          +
+        </button>
+      </div>
+        <button 
+        disabled={stock === 0}
+        onClick={() => handleAddToCart(count)}
+        className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg uppercase m-8 lg:m-10 md:m-10">Agregar al carrito</button>
+    </>
   );
 };
 
