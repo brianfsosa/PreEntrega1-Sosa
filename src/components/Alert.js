@@ -14,6 +14,11 @@ const Alert = ({message, onClose }) => {
         <div className="flex items-center m-8">
           <p>{message}</p>
         </div>
+            <Link to={'/'}>
+            <button
+                className=" mb-4 w-full bg-blue-800 text-white border border-gray-600 rounded-lg px-4 py-2 text-base transition duration-300 ease-in-out transform hover:bg-gray-700 active:scale-95"
+            >Seguir Comprando</button>
+            </Link>
           <Link to={'/cart'}><button className='w-full bg-gray-800 text-white border border-gray-600 rounded-lg px-4 py-2 text-base transition duration-300 ease-in-out transform hover:bg-gray-700 active:scale-95'>Ir al Carrito</button></Link>
       </div>
     </div>
