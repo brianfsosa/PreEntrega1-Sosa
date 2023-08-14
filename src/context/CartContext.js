@@ -21,7 +21,6 @@ function CartProvider({children}){
             const newItem = {...product, count}
             newCart.push(newItem)
             setCart(newCart)
-            console.log(newItem)
         }
     }
 

@@ -7,7 +7,6 @@ import Loader from './Loader'
 function ItemListContainer({greeting}) {
   const [products, setProducts] = useState([])
   const [isLoading, setIsLoading] = useState(true)
-
   const {categoryId} = useParams()
 
   useEffect(() => {
@@ -18,7 +17,6 @@ function ItemListContainer({greeting}) {
       setIsLoading(false)
     })
     .catch(error => {
-      console.error(error)
     })
   },[categoryId])
 

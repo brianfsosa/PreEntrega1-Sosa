@@ -20,7 +20,7 @@ function App() {
             <Route path='/cart' element={<CartContainer />}/>
             <Route path='/checkout' element={<Checkout />}/>
             <Route path='/order/:id' element={<OrderConfirm />}/>
-            <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
+            <Route path='*' element={<h1 className='text-white text-center'><span className='text-8xl h-full'>404</span> LA PÁGINA NO EXISTE</h1>}/>
           </Routes>
         </BrowserRouter>
       </CartProvider>

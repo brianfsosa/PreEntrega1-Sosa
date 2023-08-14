@@ -7,7 +7,6 @@ import Loader from "./Loader"
 function OrderConfirm() {
   const [orderData, setOrderData] = useState(null)
   const [isLoading, setIsLoading] = useState(true)
-
   const { id } = useParams()
 
   useEffect(() => {
@@ -28,10 +27,8 @@ function OrderConfirm() {
           orderData.items.map((p) => {
             return(
               <p>{p.nombre} - {p.count}</p>
-            )
-          })
+            )})
         }
-          
         <Link to={'/'}>
           <button
             className="m-8 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg"
@@ -40,8 +37,6 @@ function OrderConfirm() {
       </div>
     )
   }
-
-  
 }
 
 export default OrderConfirm

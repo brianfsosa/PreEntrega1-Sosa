@@ -3,7 +3,6 @@ import ItemCount from './ItemCount'
 
 function ItemDetail({product, handleAddToCart, isAddedToCart, countInCart=0}) {
 const {nombre, precio, stock, descripcion, img} = product
-console.log('prod',product)
 
   return (
       <article className='h-screen w-full text-center bg-gray-800'>

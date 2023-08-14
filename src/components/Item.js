@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Item({ id, nombre, precio, stock, descripcion, img }) {
+function Item({ id, nombre, precio, descripcion, img }) {
   return (
     <article className="w-72  lg:w-96 md:w-72 text-center lg:m-6">
       <div className="bg-gray-800 shadow-lg rounded-lg overflow-hidden">

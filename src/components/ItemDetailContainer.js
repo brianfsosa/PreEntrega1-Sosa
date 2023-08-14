@@ -31,7 +31,6 @@ function ItemDetailContainer() {
                 setIsLoading(false)
             })
             .catch(error => {
-                console.error(error)
         })
     },[itemId])
 
@@ -40,7 +39,7 @@ function ItemDetailContainer() {
         setIsAddedToCart(true)
         handleShowAlert()
     }
-    console.log('item en el carro',getItemInCart(itemId))
+
 if(isLoading){
     return (<Loader />)
 }else{
