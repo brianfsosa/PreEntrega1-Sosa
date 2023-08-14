@@ -26,7 +26,7 @@ function CartProvider({children}){
     }
 
     function getItemInCart(id){
-        return cart.some((item) => item.id === id)
+        return cart.find((item) => item.id === id);
     }
 
     function getTotalItemsInCart(){

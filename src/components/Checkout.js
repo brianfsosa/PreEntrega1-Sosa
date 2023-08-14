@@ -44,11 +44,13 @@ function Checkout() {
         setBuyer(buyerTemplate)
     }
   return (
-    <form className="h-screen">
-        <h2>Completa con tus datos para realizar la compra</h2>
+    <form className="h-screen text-center m-8 text-white">
+        <h2 className="text-4xl m-8">Completa con tus datos para realizar la compra</h2>
         <div>
-            <label htmlFor="firstname">Nombre</label>
+        <div>
+            <label htmlFor="firstname">Nombre: </label>
             <input 
+            className="m-4 px-4 py-2 rounded-lg border bg-gray-800 border-gray-300 focus:outline-none focus:border-blue-500 transition duration-300 ease-in-out"
             value={buyer.firstname}
             name="firstname"
             type="text"
@@ -56,8 +58,9 @@ function Checkout() {
             />
         </div>
         <div>
-            <label htmlFor="firstname">Apellido</label>
+            <label htmlFor="firstname">Apellido: </label>
             <input 
+            className="m-4 px-4 py-2 rounded-lg border bg-gray-800 border-gray-300 focus:outline-none focus:border-blue-500 transition duration-300 ease-in-out"
             value={buyer.lastname}
             name="lastname"
             type="text"
@@ -67,19 +70,21 @@ function Checkout() {
         <div>
             <label htmlFor="firstname">Email</label>
             <input 
+            className="m-4 px-4 py-2 rounded-lg border bg-gray-800 border-gray-300 focus:outline-none focus:border-blue-500 transition duration-300 ease-in-out"
             value={buyer.email}
             name="email"
             type="email"
             onChange={onInputChange}
             />
         </div>
+        </div>
         <button
             disabled={!(buyer.firstname !== "" & buyer.lastname !== "" && buyer.email !== "")}
-            className={(buyer.firstname !== "" & buyer.lastname !== "" && buyer.email !== "") ? 'bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg': ''}
+            className={(buyer.firstname !== "" & buyer.lastname !== "" && buyer.email !== "") ? ' bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg': ''}
             onClick={handleCheckout}
         >Confirmar Compra</button>
         <button 
-        className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg"
+        className=" m-4 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg"
         onClick={resetForm}>Resetear Formulario</button>
     </form>
   )
