@@ -49,7 +49,7 @@ if(isLoading){
             <ItemDetail product={{...product, stock:maxItems}}  handleAddToCart={handleAddToCart} isAddedToCart={isAddedToCart} countInCart={itemInCart?.count}/>
         }
         {showAlert && (
-        <Alert type="success" message={`Agregaste ${itemInCart.count} ${product.nombre} al carrito`} onClose={handleCloseAlert} />
+        <Alert message={`Agregaste ${itemInCart.count} ${product.nombre} al carrito`} onClose={handleCloseAlert} />
       )}
     </div>
   )}

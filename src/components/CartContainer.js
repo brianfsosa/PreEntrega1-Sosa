@@ -7,6 +7,8 @@ function CartContainer() {
 
   return (
     <div className="h-screen text-white ml-8 text-center  p-8">
+      <h1 className="text-4xl">CARRITO</h1>
+      
       {cart.map((prod) => {
         return (
           <div className="flex m-8 gap-32 ">
@@ -30,6 +32,7 @@ function CartContainer() {
             <p>
               Total: <span>${prod.count * prod.precio}</span>{" "}
             </p>
+            
           </div>
         );
       })}

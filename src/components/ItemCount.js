@@ -7,13 +7,13 @@ const ItemCount = ({stock, handleAddToCart}) => {
     if (count < stock) {
       setCount((contador) => contador + 1);
     }
-  };
+  }
 
   const decrementCount = () => {
     if (count > 1) {
       setCount((contador) => contador - 1);
     }
-  };
+  }
 
   return (
     <>

@@ -27,7 +27,7 @@ function ItemListContainer({greeting}) {
   }else{
   return (
     <div className="h-full text-center mt-8 text-green-500 font-semibold">
-      {greeting}
+      {greeting ? greeting   : categoryId}
       <ItemList  products={products}/>
     </div>
   )}
